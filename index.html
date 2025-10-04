@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNA da Segurança | Segurança no Trabalho</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #098900 0%, #4377c3 50%, #0d5173 100%);
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .stat-card {
+            transition: all 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: scale(1.05);
+        }
+
+        .nav-link {
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dnadaseguranca.com.br/#organization",
+      "name": "DNA da Segurança",
+      "url": "https://dnadaseguranca.com.br/",
+      "logo": "https://dnadaseguranca.com.br/assets/logo1.png",
+      "description": "Especialistas em segurança e saúde no trabalho, transformando ambientes laborais em locais mais seguros e produtivos.",
+      "foundingDate": "2019",
+      "founder": {
+        "@type": "Person",
+        "name": "Fundador DNA da Segurança"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Odir Susin, 21, Bloco B",
+        "addressLocality": "Curitiba",
+        "addressRegion": "PR",
+        "postalCode": "81270-020",
+        "addressCountry": "BR"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-41-98742-4741",
+          "contactType": "customer service",
+          "email": "atendimento@dnadaseguranca.com.br",
+          "availableLanguage": "Portuguese"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/share/1Ai1VR7WeD/",
+        "https://www.instagram.com/dnadaseguranca",
+        "https://www.linkedin.com/company/dna-da-segurança/",
+        "https://wa.me/5541987424741"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dnadaseguranca.com.br/#website",
+      "url": "https://dnadaseguranca.com.br/",
+      "name": "DNA da Segurança | Segurança no Trabalho",
+      "description": "Especialistas em segurança do trabalho, saúde ocupacional e treinamentos normativos. Consultoria em NRs, laudos técnicos e programas de segurança.",
+      "publisher": {
+        "@id": "https://dnadaseguranca.com.br/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://dnadaseguranca.com.br/?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "LocalBusiness",
+      "name": "DNA da Segurança",
+      "description": "Consultoria especializada em segurança do trabalho e saúde ocupacional em Curitiba e região.",
+      "url": "https://dnadaseguranca.com.br/",
+      "telephone": "+55-41-98742-4741",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Odir Susin, 21, Bloco B",
+        "addressLocality": "Curitiba",
+        "addressRegion": "PR",
+        "postalCode": "81270-020",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-25.46320263304938",
+        "longitude": "-49.32019172481403"
+      },
+      "openingHours": "Mo-Fr 08:00-18:00",
+      "priceRange": "$$",
+      "areaServed": "Curitiba e região metropolitana",
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "-25.46320263304938",
+          "longitude": "-49.32019172481403"
+        },
+        "geoRadius": "50000"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Serviços de Segurança do Trabalho",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Gestão de Riscos e Laudos Técnicos",
+              "description": "PGR/GRO, Laudo de Insalubridade, Laudo de Periculosidade, LTCAT"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Programas de Proteção e Conservação",
+              "description": "PPR - Proteção Respiratória, PCA - Conservação Auditiva, NR10 e NR12"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Saúde Ocupacional",
+              "description": "PCMSO - NR07, Exames Clínicos e Complementares, Atendimento In-Company"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Avaliações Quantitativas",
+              "description": "Ruído, Calor, Vibração, Agentes Químicos, Laudos e Relatórios Técnicos"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "e-Social",
+              "description": "Envios S-2210, S-2220, S-2221, S-2240, Conformidade com exigências legais"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Treinamentos Normativos",
+              "description": "NR06, NR10, NR11, NR12, NR18, NR33, NR35, Presencial, In-Company e EAD"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://dnadaseguranca.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Serviços",
+          "item": "https://dnadaseguranca.com.br/#servicos"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Estatísticas",
+          "item": "https://dnadaseguranca.com.br/#estatisticas"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Contato",
+          "item": "https://dnadaseguranca.com.br/#contato"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que é a DNA da Segurança?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A DNA da Segurança é uma empresa especializada em segurança do trabalho e saúde ocupacional, fundada em 2019, que oferece soluções completas incluindo consultoria, treinamentos, laudos técnicos e programas de segurança para empresas de todos os portes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quais Normas Regulamentadoras (NRs) a DNA da Segurança atende?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Atendemos diversas NRs, incluindo NR1 (PGR/GRO), NR6 (EPIs), NR7 (PCMSO), NR10 (Eletricidade), NR12 (Máquinas e Equipamentos), NR15 (Insalubridade), NR16 (Periculosidade), NR18 (Construção Civil), NR33 (Espaços Confinados) e NR35 (Trabalho em Altura)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A DNA da Segurança oferece treinamentos presenciais e online?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim, oferecemos treinamentos presenciais, in-company e EAD (ensino a distância) para diversas normas regulamentadoras, com certificado válido em todo território nacional."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como solicitar um orçamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Você pode solicitar um orçamento através do WhatsApp (41) 98742-4741, e-mail atendimento@dnadaseguranca.com.br ou pelo formulário de contato em nosso site."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "A DNA da Segurança atende em todo o Brasil?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Com sede em Curitiba-PR, atendemos clientes em todo o Brasil, com serviços presenciais na região metropolitana de Curitiba e consultoria remota para outras localidades."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navbar -->
+    <header class="bg-white shadow-lg sticky top-0 z-50 border-b border-gray-100">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo e Nome -->
+            <div class="flex items-center space-x-3">
+                <div class="p-1 rounded-xl shadow-md bg-white">
+                    <img src="./assets/logo1.png" alt="Logo DNA da Segurança" class="h-16 w-auto object-contain" />
+                </div>
+                <h1
+                    class="text-2xl font-bold bg-gradient-to-r from-[#098900] via-[#4377c3] to-[#0d5173] bg-clip-text text-transparent">
+                    Segurança no Trabalho
+                </h1>
+            </div>
+
+            <!-- Navegação Desktop -->
+            <nav class="hidden md:flex space-x-1">
+                <a href="#inicio"
+                    class="nav-link px-4 py-2 text-gray-700 hover:text-[#098900] font-medium rounded-lg transition-colors duration-300 hover:bg-gray-50">
+                    Início
+                </a>
+                <a href="#servicos"
+                    class="nav-link px-4 py-2 text-gray-700 hover:text-[#4377c3] font-medium rounded-lg transition-colors duration-300 hover:bg-gray-50">
+                    Serviços
+                </a>
+                <a href="#estatisticas"
+                    class="nav-link px-4 py-2 text-gray-700 hover:text-[#0d5173] font-medium rounded-lg transition-colors duration-300 hover:bg-gray-50">
+                    Estatísticas
+                </a>
+
+                <a href="#contato"
+                    class="nav-link px-4 py-2 text-white font-medium rounded-lg transition-all duration-300 bg-gradient-to-r from-[#098900] to-[#4377c3] hover:from-[#0d5173] hover:to-[#098900] shadow-md hover:shadow-lg">
+                    Contato
+                </a>
+            </nav>
+
+            <!-- Botão Mobile -->
+            <button class="md:hidden text-gray-700 focus:outline-none" id="mobile-menu-button" aria-label="Toggle menu"
+                aria-expanded="false" aria-controls="mobile-menu">
+                <div class="w-8 space-y-2">
+                    <span class="block h-0.5 w-full bg-[#0d5173] rounded-full transition-all"></span>
+                    <span class="block h-0.5 w-full bg-[#4377c3] rounded-full transition-all"></span>
+                    <span class="block h-0.5 w-full bg-[#098900] rounded-full transition-all"></span>
+                </div>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav class="md:hidden hidden bg-white w-full py-3 px-4 shadow-lg border-t border-gray-100" id="mobile-menu"
+            aria-label="Mobile menu">
+            <div class="flex flex-col space-y-3">
+                <a href="#inicio"
+                    class="px-4 py-2 text-gray-700 hover:text-[#098900] font-medium rounded-lg transition-colors duration-300 hover:bg-gray-50">
+                    Início
+                </a>
+                <a href="#servicos"
+                    class="px-4 py-2 text-gray-700 hover:text-[#4377c3] font-medium rounded-lg transition-colors duration-300 hover:bg-gray-50">
+                    Serviços
+                </a>
+                <a href="#estatisticas"
+                    class="px-4 py-2 text-gray-700 hover:text-[#0d5173] font-medium rounded-lg transition-colors duration-300 hover:bg-gray-50">
+                    Estatísticas
+                </a>
+
+                <a href="#contato"
+                    class="px-4 py-2 text-white font-medium rounded-lg transition-all duration-300 bg-gradient-to-r from-[#098900] to-[#4377c3] hover:from-[#0d5173] hover:to-[#098900] shadow-md text-center">
+                    Contato
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <style>
+        .nav-link {
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: currentColor;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:not(:last-child):hover::after {
+            width: 60%;
+        }
+
+        #mobile-menu-button span {
+            transition: all 0.3s ease;
+        }
+    </style>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative text-white py-24 bg-cover bg-center"
+        style="background-image: url('./assets/backhead.jpg')">
+
+        <!-- Camada escura -->
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+        <!-- Conteúdo -->
+        <div class="relative container mx-auto px-4 flex flex-col md:flex-row items-center z-10">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Segurança no Trabalho é nosso DNA</h1>
+                <p class="text-xl mb-8 text-blue-100">Transformamos a cultura de segurança da sua empresa com soluções
+                    personalizadas e treinamentos eficazes.</p>
+
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 mb-4">
+                    <!-- Link para WhatsApp estilizado -->
+                    <a href="https://wa.me/5541987424741?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20com%20a%20DNA%20da%20Segurança."
+                        target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center bg-[#25D366] text-white px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-[#1ebe5d] transition duration-300 text-center">
+                        <i class="fab fa-whatsapp text-2xl mr-2"></i>
+                        Solicitar Orçamento via WhatsApp
+                    </a>
+
+                    <a href="#servicos"
+                        class="border-2 border-white text-white hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold text-center transition duration-300">
+                        Conheça Nossos Serviços
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="servicos" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-[#0d5173] mb-4">Serviços da DNA da Segurança</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Soluções completas em segurança do trabalho, saúde ocupacional e treinamentos normativos.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-44 bg-[#4377c3] flex items-center justify-center">
+                        <i class="fas fa-clipboard-list text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#0d5173] mb-3">Gestão de Riscos e Laudos Técnicos</h3>
+                        <ul class="text-gray-700 list-disc list-inside space-y-1 text-sm">
+                            <li>PGR / GRO - NR01</li>
+                            <li>Laudo de Insalubridade - NR15</li>
+                            <li>Laudo de Periculosidade - NR16</li>
+                            <li>LTCAT - Condições Ambientais (INSS)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-44 bg-[#098900] flex items-center justify-center">
+                        <i class="fas fa-head-side-mask text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#0d5173] mb-3">Programas de Proteção e Conservação</h3>
+                        <ul class="text-gray-700 list-disc list-inside space-y-1 text-sm">
+                            <li>PPR - Proteção Respiratória</li>
+                            <li>PCA - Conservação Auditiva</li>
+                            <li>NR10 e NR12 - Prontuários e Laudos Técnicos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-44 bg-[#0d5173] flex items-center justify-center">
+                        <i class="fas fa-user-md text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#0d5173] mb-3">Saúde Ocupacional</h3>
+                        <ul class="text-gray-700 list-disc list-inside space-y-1 text-sm">
+                            <li>PCMSO - NR07</li>
+                            <li>Exames Clínicos e Complementares</li>
+                            <li>Atendimento In-Company</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-44 bg-[#4377c3] flex items-center justify-center">
+                        <i class="fas fa-vials text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#0d5173] mb-3">Avaliações Quantitativas</h3>
+                        <ul class="text-gray-700 list-disc list-inside space-y-1 text-sm">
+                            <li>Ruído, Calor, Vibração</li>
+                            <li>Agentes Químicos</li>
+                            <li>Laudos e Relatórios Técnicos</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-44 bg-[#098900] flex items-center justify-center">
+                        <i class="fas fa-file-alt text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#0d5173] mb-3">e-Social</h3>
+                        <ul class="text-gray-700 list-disc list-inside space-y-1 text-sm">
+                            <li>Envios S-2210, S-2220, S-2221, S-2240</li>
+                            <li>Conformidade com exigências legais</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <div class="h-44 bg-[#0d5173] flex items-center justify-center">
+                        <i class="fas fa-chalkboard-teacher text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-[#0d5173] mb-3">Treinamentos Normativos</h3>
+                        <ul class="text-gray-700 list-disc list-inside space-y-1 text-sm">
+                            <li>NR06, NR10, NR11, NR12, NR18, NR33, NR35</li>
+                            <li>Presencial, In-Company e EAD</li>
+                            <li>Espaço para teoria e prática</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="sobre" class="py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span
+                    class="inline-block bg-[#0d5173] bg-opacity-10 text-[#0d5173] font-semibold px-4 py-2 rounded-full mb-4">
+                    Sobre Nós
+                </span>
+                <h2 class="text-4xl font-bold text-[#0d5173] mb-4">DNA da Segurança</h2>
+                <div class="w-24 h-1 bg-[#0d5173] mx-auto mb-6"></div>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Protegendo seu patrimônio com excelência há mais de 5 anos
+                </p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12">
+
+                <!-- Coluna do Vídeo - Agora com altura controlada -->
+                <div class="w-full max-w-2xl mx-auto rounded-xl overflow-hidden shadow-2xl">
+                    <video autoplay muted playsinline loop preload="metadata"
+                        class="w-full h-auto max-h-96 object-cover">
+                        <source src="./assets/vid01.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+
+
+
+
+                <!-- Coluna do Texto (mantida igual) -->
+                <div class="lg:w-1/2 w-full">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-[#0d5173] mb-6">Nossa História e Missão</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Fundada em 2019, a DNA da Segurança surgiu da necessidade de oferecer soluções de segurança
+                            que realmente entendem as particularidades de cada cliente. Nos tornamos referência no
+                            mercado por nossa abordagem personalizada e compromisso com resultados.
+                        </p>
+
+                        <div class="grid md:grid-cols-2 gap-6 mb-8">
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex items-center mb-3">
+                                    <div class="bg-[#0d5173] bg-opacity-10 p-2 rounded-full mr-3">
+                                        <svg class="h-6 w-6 text-[#0d5173]" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                                        </svg>
+                                    </div>
+                                    <h4 class="font-bold text-gray-800">Segurança Integrada</h4>
+                                </div>
+                                <p class="text-gray-600 text-sm">Soluções completas desde análise de risco até
+                                    implementação</p>
+                            </div>
+
+                            <div class="bg-gray-50 p-4 rounded-lg">
+                                <div class="flex items-center mb-3">
+                                    <div class="bg-[#0d5173] bg-opacity-10 p-2 rounded-full mr-3">
+                                        <svg class="h-6 w-6 text-[#0d5173]" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                        </svg>
+                                    </div>
+                                    <h4 class="font-bold text-gray-800">Certificações</h4>
+                                </div>
+                                <p class="text-gray-600 text-sm">Profissionais certificados e treinamentos constantes
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="mb-8">
+                            <h4 class="font-semibold text-gray-800 mb-4">Nossos Diferenciais:</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <span class="flex-shrink-0 bg-[#0d5173] bg-opacity-10 p-1 rounded-full mr-3">
+                                        <svg class="h-5 w-5 text-[#0d5173]" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </span>
+                                    <span class="text-gray-600">Equipe especializada com treinamento contínuo</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="flex-shrink-0 bg-[#0d5173] bg-opacity-10 p-1 rounded-full mr-3">
+                                        <svg class="h-5 w-5 text-[#0d5173]" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </span>
+                                    <span class="text-gray-600">Tecnologia de monitoramento 24/7</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="flex-shrink-0 bg-[#0d5173] bg-opacity-10 p-1 rounded-full mr-3">
+                                        <svg class="h-5 w-5 text-[#0d5173]" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M5 13l4 4L19 7" />
+                                        </svg>
+                                    </span>
+                                    <span class="text-gray-600">Soluções 100% customizadas para cada cliente</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <!-- Botão do WhatsApp -->
+                            <a href="https://wa.me/5541987424741?text=Olá,%20gostaria%20de%20conhecer%20as%20soluções%20da%20DNA%20da%20Segurança"
+                                class="flex-1 text-center bg-[#25D366] text-white font-semibold px-6 py-4 rounded-lg hover:bg-[#128C7E] transition duration-300 shadow-md hover:shadow-lg flex items-center justify-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="currentColor" class="w-5 h-5">
+                                    <path
+                                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+                                </svg>
+                                WhatsApp
+                            </a>
+
+                            <!-- Botão de Ligação -->
+                            <a href="tel:+5541987424741"
+                                class="flex-1 text-center border-2 border-[#0d5173] text-[#0d5173] font-semibold px-6 py-4 rounded-lg hover:bg-[#0d5173] hover:text-white transition duration-300 flex items-center justify-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="w-5 h-5">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                                <div class="text-left">
+                                    <span class="block text-sm">Ligue agora</span>
+                                    <span class="block font-bold">(41) 98742-4741</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Estatísticas Section Aprimorada -->
+    <section id="estatisticas" class="py-16 bg-gradient-to-b from-[#f8fafc] to-[#e2e8f0]">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="inline-block mb-4 px-4 py-2 bg-[#098900] text-white text-sm font-semibold rounded-full">
+                    DADOS REAIS
+                </span>
+                <h2 class="text-4xl font-bold text-[#0d5173] mb-4">Segurança em <span
+                        class="text-[#098900]">Números</span></h2>
+                <p class="text-xl text-[#4377c3] max-w-3xl mx-auto">Métricas que demonstram o impacto da segurança no
+                    trabalho</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Stat 1 -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 stat-card border-t-4 border-[#098900]">
+                    <div class="mb-6 flex justify-center">
+                        <div class="bg-[#098900]/10 text-[#098900] p-4 rounded-full">
+                            <i class="fas fa-ambulance text-3xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-5xl font-bold text-[#0d5173] mb-3">
+                        <span class="counter" data-target="612">0</span> mil
+                    </h3>
+                    <p class="text-gray-600 font-medium">Acidentes de trabalho registrados anualmente</p>
+                    <div class="mt-4 h-1 bg-gradient-to-r from-[#098900] to-[#098900]/20 rounded-full"></div>
+                </div>
+
+                <!-- Stat 2 -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 stat-card border-t-4 border-[#4377c3]">
+                    <div class="mb-6 flex justify-center">
+                        <div class="bg-[#4377c3]/10 text-[#4377c3] p-4 rounded-full">
+                            <i class="fas fa-money-bill-wave text-3xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-5xl font-bold text-[#0d5173] mb-3">R$ <span class="counter"
+                            data-target="26">0</span> bi</h3>
+                    <p class="text-gray-600 font-medium">Custo anual com acidentes para empresas</p>
+                    <div class="mt-4 h-1 bg-gradient-to-r from-[#4377c3] to-[#4377c3]/20 rounded-full"></div>
+                </div>
+
+                <!-- Stat 3 -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 stat-card border-t-4 border-[#0d5173]">
+                    <div class="mb-6 flex justify-center">
+                        <div class="bg-[#0d5173]/10 text-[#0d5173] p-4 rounded-full">
+                            <i class="fas fa-chart-line text-3xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-5xl font-bold text-[#098900] mb-3">+<span class="counter" data-target="70">0</span>%
+                    </h3>
+                    <p class="text-gray-600 font-medium">Redução com programas de segurança eficazes</p>
+                    <div class="mt-4 h-1 bg-gradient-to-r from-[#0d5173] to-[#0d5173]/20 rounded-full"></div>
+                </div>
+
+                <!-- Stat 4 -->
+                <div
+                    class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 stat-card border-t-4 border-[#098900]">
+                    <div class="mb-6 flex justify-center">
+                        <div class="bg-[#098900]/10 text-[#098900] p-4 rounded-full">
+                            <i class="fas fa-user-shield text-3xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-5xl font-bold text-[#0d5173] mb-3"><span class="counter"
+                            data-target="1500">0</span>+</h3>
+                    <p class="text-gray-600 font-medium">Profissionais treinados no último ano</p>
+                    <div class="mt-4 h-1 bg-gradient-to-r from-[#098900] to-[#098900]/20 rounded-full"></div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center">
+                <p class="text-sm text-gray-500 max-w-2xl mx-auto">
+                    <i class="fas fa-info-circle text-[#4377c3] mr-2"></i>
+                    Dados atualizados conforme relatórios do Ministério do Trabalho e nossa base de clientes
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Animação de contagem
+        document.addEventListener('DOMContentLoaded', function () {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200;
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const increment = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(updateCount, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                const observer = new IntersectionObserver((entries) => {
+                    if (entries[0].isIntersecting) {
+                        updateCount();
+                    }
+                });
+
+                observer.observe(counter);
+            });
+        });
+    </script>
+
+    <style>
+        .stat-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .counter {
+            display: inline-block;
+        }
+    </style>
+
+
+
+    <!-- Seção da Calculadora de Risco Ocupacional Aprimorada -->
+    <section id="calculadora" class="py-8 md:py-16 bg-gradient-to-b from-blue-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8 md:mb-12">
+                <div
+                    class="inline-flex items-center justify-center bg-blue-100 text-blue-600 rounded-full w-12 h-12 md:w-16 md:h-16 mb-3 md:mb-4">
+                    <i class="fas fa-calculator text-xl md:text-2xl"></i>
+                </div>
+                <h2 class="text-2xl md:text-4xl font-bold text-gray-800 mb-2 md:mb-3">Calculadora de Risco Ocupacional
+                </h2>
+                <p class="text-base md:text-xl text-gray-600 max-w-3xl mx-auto">Avalie o nível de risco do seu ambiente
+                    de trabalho em poucos passos</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-white rounded-lg md:rounded-xl shadow-lg md:shadow-xl overflow-hidden">
+                <!-- Progress Steps -->
+                <div class="px-4 md:px-8 pt-6 md:pt-8">
+                    <div class="flex justify-between mb-6 md:mb-8">
+                        <div class="step flex flex-col items-center w-1/3" data-step="1">
+                            <div
+                                class="step-number bg-blue-600 text-white rounded-full w-6 h-6 md:w-8 md:h-8 flex items-center justify-center mb-1 md:mb-2 text-xs md:text-base font-medium">
+                                1</div>
+                            <div class="step-title font-medium text-blue-600 text-xs md:text-sm text-center">Fatores de
+                                Risco</div>
+                        </div>
+                        <div class="step flex flex-col items-center w-1/3" data-step="2">
+                            <div
+                                class="step-number bg-gray-200 text-gray-600 rounded-full w-6 h-6 md:w-8 md:h-8 flex items-center justify-center mb-1 md:mb-2 text-xs md:text-base font-medium">
+                                2</div>
+                            <div class="step-title font-medium text-gray-500 text-xs md:text-sm text-center">
+                                Funcionários</div>
+                        </div>
+                        <div class="step flex flex-col items-center w-1/3" data-step="3">
+                            <div
+                                class="step-number bg-gray-200 text-gray-600 rounded-full w-6 h-6 md:w-8 md:h-8 flex items-center justify-center mb-1 md:mb-2 text-xs md:text-base font-medium">
+                                3</div>
+                            <div class="step-title font-medium text-gray-500 text-xs md:text-sm text-center">Resultado
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 1 - Fatores de Risco -->
+                <div id="step-1" class="step-content px-4 md:px-8 pb-6 md:pb-8">
+                    <h3 class="text-lg md:text-xl font-semibold text-gray-800 mb-4 md:mb-6">Identifique os fatores de
+                        risco presentes no ambiente:</h3>
+
+                    <div class="space-y-3 md:space-y-4">
+                        <!-- Fator 1 -->
+                        <div
+                            class="risk-factor flex flex-col sm:flex-row items-start sm:items-center justify-between p-3 md:p-4 border-2 border-gray-100 rounded-lg md:rounded-xl hover:border-blue-200 hover:bg-blue-50 transition-all duration-300">
+                            <div class="flex items-start sm:items-center mb-2 sm:mb-0">
+                                <div
+                                    class="risk-icon bg-blue-100 text-blue-600 rounded-lg w-10 h-10 md:w-12 md:h-12 flex items-center justify-center mr-3 md:mr-4">
+                                    <i class="fas fa-hard-hat text-lg md:text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800 text-sm md:text-base">Risco Físico</h4>
+                                    <p class="text-xs md:text-sm text-gray-500">Ruído, vibrações, temperaturas extremas,
+                                        radiação, etc.</p>
+                                </div>
+                            </div>
+                            <select
+                                class="risk-select bg-white border border-gray-300 text-gray-700 py-1 px-2 md:py-2 md:px-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition text-sm md:text-base">
+                                <option value="0">Não aplicável</option>
+                                <option value="1">Baixo</option>
+                                <option value="2">Médio</option>
+                                <option value="3">Alto</option>
+                            </select>
+                        </div>
+
+                        <!-- Fator 2 -->
+                        <div
+                            class="risk-factor flex flex-col sm:flex-row items-start sm:items-center justify-between p-3 md:p-4 border-2 border-gray-100 rounded-lg md:rounded-xl hover:border-blue-200 hover:bg-blue-50 transition-all duration-300">
+                            <div class="flex items-start sm:items-center mb-2 sm:mb-0">
+                                <div
+                                    class="risk-icon bg-blue-100 text-blue-600 rounded-lg w-10 h-10 md:w-12 md:h-12 flex items-center justify-center mr-3 md:mr-4">
+                                    <i class="fas fa-flask text-lg md:text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800 text-sm md:text-base">Risco Químico</h4>
+                                    <p class="text-xs md:text-sm text-gray-500">Produtos químicos, vapores, poeiras,
+                                        fumos, névoas, etc.</p>
+                                </div>
+                            </div>
+                            <select
+                                class="risk-select bg-white border border-gray-300 text-gray-700 py-1 px-2 md:py-2 md:px-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition text-sm md:text-base">
+                                <option value="0">Não aplicável</option>
+                                <option value="1">Baixo</option>
+                                <option value="2">Médio</option>
+                                <option value="3">Alto</option>
+                            </select>
+                        </div>
+
+                        <!-- Fator 3 -->
+                        <div
+                            class="risk-factor flex flex-col sm:flex-row items-start sm:items-center justify-between p-3 md:p-4 border-2 border-gray-100 rounded-lg md:rounded-xl hover:border-blue-200 hover:bg-blue-50 transition-all duration-300">
+                            <div class="flex items-start sm:items-center mb-2 sm:mb-0">
+                                <div
+                                    class="risk-icon bg-blue-100 text-blue-600 rounded-lg w-10 h-10 md:w-12 md:h-12 flex items-center justify-center mr-3 md:mr-4">
+                                    <i class="fas fa-biohazard text-lg md:text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800 text-sm md:text-base">Risco Biológico</h4>
+                                    <p class="text-xs md:text-sm text-gray-500">Bactérias, vírus, fungos, parasitas,
+                                        material biológico, etc.</p>
+                                </div>
+                            </div>
+                            <select
+                                class="risk-select bg-white border border-gray-300 text-gray-700 py-1 px-2 md:py-2 md:px-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition text-sm md:text-base">
+                                <option value="0">Não aplicável</option>
+                                <option value="1">Baixo</option>
+                                <option value="2">Médio</option>
+                                <option value="3">Alto</option>
+                            </select>
+                        </div>
+
+                        <!-- Fator 4 -->
+                        <div
+                            class="risk-factor flex flex-col sm:flex-row items-start sm:items-center justify-between p-3 md:p-4 border-2 border-gray-100 rounded-lg md:rounded-xl hover:border-blue-200 hover:bg-blue-50 transition-all duration-300">
+                            <div class="flex items-start sm:items-center mb-2 sm:mb-0">
+                                <div
+                                    class="risk-icon bg-blue-100 text-blue-600 rounded-lg w-10 h-10 md:w-12 md:h-12 flex items-center justify-center mr-3 md:mr-4">
+                                    <i class="fas fa-bone text-lg md:text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800 text-sm md:text-base">Risco Ergonômico</h4>
+                                    <p class="text-xs md:text-sm text-gray-500">Postura inadequada, levantamento de
+                                        peso, movimentos repetitivos, etc.</p>
+                                </div>
+                            </div>
+                            <select
+                                class="risk-select bg-white border border-gray-300 text-gray-700 py-1 px-2 md:py-2 md:px-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition text-sm md:text-base">
+                                <option value="0">Não aplicável</option>
+                                <option value="1">Baixo</option>
+                                <option value="2">Médio</option>
+                                <option value="3">Alto</option>
+                            </select>
+                        </div>
+
+                        <!-- Fator 5 -->
+                        <div
+                            class="risk-factor flex flex-col sm:flex-row items-start sm:items-center justify-between p-3 md:p-4 border-2 border-gray-100 rounded-lg md:rounded-xl hover:border-blue-200 hover:bg-blue-50 transition-all duration-300">
+                            <div class="flex items-start sm:items-center mb-2 sm:mb-0">
+                                <div
+                                    class="risk-icon bg-blue-100 text-blue-600 rounded-lg w-10 h-10 md:w-12 md:h-12 flex items-center justify-center mr-3 md:mr-4">
+                                    <i class="fas fa-bolt text-lg md:text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800 text-sm md:text-base">Risco de Acidentes</h4>
+                                    <p class="text-xs md:text-sm text-gray-500">Máquinas, eletricidade, quedas,
+                                        incêndio, ferramentas inadequadas, etc.</p>
+                                </div>
+                            </div>
+                            <select
+                                class="risk-select bg-white border border-gray-300 text-gray-700 py-1 px-2 md:py-2 md:px-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition text-sm md:text-base">
+                                <option value="0">Não aplicável</option>
+                                <option value="1">Baixo</option>
+                                <option value="2">Médio</option>
+                                <option value="3">Alto</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 md:mt-8 flex justify-end">
+                        <button id="next-step-1"
+                            class="next-step bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 md:py-3 md:px-6 rounded-lg font-semibold transition duration-300 flex items-center text-sm md:text-base">
+                            Próximo <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 2 - Funcionários -->
+                <div id="step-2" class="step-content hidden px-4 md:px-8 pb-6 md:pb-8">
+                    <h3 class="text-lg md:text-xl font-semibold text-gray-800 mb-4 md:mb-6">Informe sobre os
+                        funcionários expostos:</h3>
+
+                    <div class="bg-blue-50 rounded-lg md:rounded-xl p-4 md:p-6 mb-4 md:mb-6">
+                        <div class="flex items-center mb-3 md:mb-4">
+                            <i class="fas fa-users text-blue-600 text-xl md:text-2xl mr-3 md:mr-4"></i>
+                            <h4 class="font-medium text-gray-800 text-sm md:text-base">Número de funcionários expostos
+                            </h4>
+                        </div>
+                        <div class="pl-8 md:pl-10">
+                            <input type="range" id="funcionarios" min="1" max="100" value="10"
+                                class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer mb-1 md:mb-2">
+                            <div class="flex justify-between text-xs md:text-sm text-gray-500">
+                                <span>1-10</span>
+                                <span>11-30</span>
+                                <span>31-50</span>
+                                <span>51-100</span>
+                            </div>
+                        </div>
+                        <div class="mt-3 md:mt-4 flex items-center justify-center">
+                            <span class="text-xl md:text-3xl font-bold text-blue-600 mr-1 md:mr-2"><span
+                                    id="funcionarios-value">10</span></span>
+                            <span class="text-gray-600 text-sm md:text-base">funcionários expostos</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 rounded-lg md:rounded-xl p-4 md:p-6">
+                        <div class="flex items-center mb-3 md:mb-4">
+                            <i class="fas fa-clock text-blue-600 text-xl md:text-2xl mr-3 md:mr-4"></i>
+                            <h4 class="font-medium text-gray-800 text-sm md:text-base">Tempo médio de exposição diária
+                            </h4>
+                        </div>
+                        <div class="pl-8 md:pl-10">
+                            <select id="tempo-exposicao"
+                                class="w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 md:py-3 md:px-4 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-sm md:text-base">
+                                <option value="1">Menos de 2 horas</option>
+                                <option value="2">De 2 a 4 horas</option>
+                                <option value="3" selected>De 4 a 6 horas</option>
+                                <option value="4">Mais de 6 horas</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 md:mt-8 flex justify-between">
+                        <button
+                            class="prev-step bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 md:py-3 md:px-6 rounded-lg font-medium transition duration-300 flex items-center text-sm md:text-base">
+                            <i class="fas fa-arrow-left mr-1 md:mr-2"></i> Voltar
+                        </button>
+                        <button id="calculate-risk"
+                            class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 md:py-3 md:px-6 rounded-lg font-semibold transition duration-300 flex items-center text-sm md:text-base">
+                            Calcular Risco <i class="fas fa-calculator ml-1 md:ml-2"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Step 3 - Resultado -->
+                <div id="step-3" class="step-content hidden px-4 md:px-8 pb-6 md:pb-8">
+                    <div id="resultado" class="text-center">
+                        <div class="mb-4 md:mb-6">
+                            <i id="resultado-icone" class="fas text-4xl md:text-5xl mb-2 md:mb-4"></i>
+                            <h3 id="resultado-titulo" class="text-xl md:text-3xl font-bold mb-2 md:mb-3"></h3>
+                            <p id="resultado-descricao" class="text-gray-600 max-w-2xl mx-auto text-sm md:text-base">
+                            </p>
+                        </div>
+
+                        <div class="mb-6 md:mb-8">
+                            <div class="flex justify-between mb-1 md:mb-2">
+                                <span class="text-xs md:text-sm font-medium text-gray-600">Baixo Risco</span>
+                                <span class="text-xs md:text-sm font-medium text-gray-600">Alto Risco</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3 md:h-4 mb-1 md:mb-2">
+                                <div id="resultado-barra" class="h-3 md:h-4 rounded-full"></div>
+                            </div>
+                            <p id="resultado-score" class="text-xs md:text-sm text-gray-500"></p>
+                        </div>
+
+                        <div class="bg-gray-50 rounded-lg md:rounded-xl p-4 md:p-6 mb-6 md:mb-8 text-left">
+                            <h4 class="font-semibold text-gray-800 mb-2 md:mb-3 flex items-center text-sm md:text-base">
+                                <i class="fas fa-lightbulb text-yellow-500 mr-1 md:mr-2"></i> Recomendações:
+                            </h4>
+                            <ul id="recomendacoes"
+                                class="list-disc pl-4 md:pl-5 space-y-1 md:space-y-2 text-gray-600 text-xs md:text-sm">
+                                <!-- Dinamicamente preenchido pelo JavaScript -->
+                            </ul>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row justify-center gap-2 md:gap-4">
+                            <button id="new-calculation"
+                                class="bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-4 md:py-3 md:px-6 rounded-lg font-medium transition duration-300 flex items-center justify-center text-sm md:text-base">
+                                <i class="fas fa-redo mr-1 md:mr-2"></i> Nova Análise
+                            </button>
+                            <button id="solicitar-avaliacao"
+                                class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 md:py-3 md:px-6 rounded-lg font-semibold transition duration-300 flex items-center justify-center text-sm md:text-base">
+                                <i class="fas fa-clipboard-list mr-1 md:mr-2"></i> Solicitar Avaliação Completa
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 md:mt-12 text-center text-gray-600 max-w-3xl mx-auto">
+                <div
+                    class="bg-white inline-flex items-start p-3 md:p-4 rounded-lg md:rounded-xl shadow-sm border border-gray-100 text-left">
+                    <i class="fas fa-info-circle text-blue-500 text-xl md:text-2xl mr-2 md:mr-3 mt-1"></i>
+                    <p class="text-xs md:text-sm">Esta calculadora fornece uma estimativa preliminar com base nas
+                        informações fornecidas. Para uma avaliação completa e adequada às Normas Regulamentadoras,
+                        recomendamos uma auditoria presencial por nossos especialistas em segurança do trabalho.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Controle dos passos da calculadora
+        const steps = document.querySelectorAll('.step');
+        const stepContents = document.querySelectorAll('.step-content');
+        const nextButtons = document.querySelectorAll('.next-step');
+        const prevButtons = document.querySelectorAll('.prev-step');
+
+        function updateSteps(currentStep) {
+            steps.forEach((step, index) => {
+                if (index < currentStep - 1) {
+                    step.querySelector('.step-number').classList.replace('bg-gray-200', 'bg-green-500');
+                    step.querySelector('.step-number').classList.replace('text-gray-600', 'text-white');
+                    step.querySelector('.step-title').classList.replace('text-gray-500', 'text-green-600');
+                } else if (index === currentStep - 1) {
+                    step.querySelector('.step-number').classList.replace('bg-gray-200', 'bg-blue-600');
+                    step.querySelector('.step-number').classList.replace('text-gray-600', 'text-white');
+                    step.querySelector('.step-title').classList.replace('text-gray-500', 'text-blue-600');
+                } else {
+                    step.querySelector('.step-number').classList.replace('bg-blue-600', 'bg-gray-200');
+                    step.querySelector('.step-number').classList.replace('text-white', 'text-gray-600');
+                    step.querySelector('.step-title').classList.replace('text-blue-600', 'text-gray-500');
+                    step.querySelector('.step-number').classList.replace('bg-green-500', 'bg-gray-200');
+                    step.querySelector('.step-title').classList.replace('text-green-600', 'text-gray-500');
+                }
+            });
+
+            stepContents.forEach(content => {
+                content.classList.add('hidden');
+            });
+            document.getElementById(`step-${currentStep}`).classList.remove('hidden');
+
+            // Rolagem suave para o topo do passo atual
+            document.getElementById(`step-${currentStep}`).scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        nextButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const currentStep = parseInt(button.closest('.step-content').id.split('-')[1]);
+                updateSteps(currentStep + 1);
+            });
+        });
+
+        prevButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const currentStep = parseInt(button.closest('.step-content').id.split('-')[1]);
+                updateSteps(currentStep - 1);
+            });
+        });
+
+        // Atualizar valor do range de funcionários
+        const funcionariosInput = document.getElementById('funcionarios');
+        const funcionariosValue = document.getElementById('funcionarios-value');
+
+        funcionariosInput.addEventListener('input', () => {
+            funcionariosValue.textContent = funcionariosInput.value;
+        });
+
+        // Calcular risco
+        document.getElementById('calculate-risk').addEventListener('click', () => {
+            // Coletar dados dos fatores de risco
+            const selects = document.querySelectorAll('.risk-select');
+            let totalScore = 0;
+            let factorsCount = 0;
+            let selectedFactors = [];
+
+            selects.forEach(select => {
+                const value = parseInt(select.value);
+                if (value > 0) {
+                    totalScore += value;
+                    factorsCount++;
+                    selectedFactors.push({
+                        name: select.closest('.risk-factor').querySelector('h4').textContent,
+                        level: value
+                    });
+                }
+            });
+
+            // Coletar outros dados
+            const funcionarios = parseInt(funcionariosInput.value);
+            const tempoExposicao = parseInt(document.getElementById('tempo-exposicao').value);
+
+            // Calcular score (fórmula mais sofisticada)
+            const pesoFuncionarios = Math.min(1.5, funcionarios / 30); // 0-1.5
+            const pesoExposicao = tempoExposicao * 0.5; // 0.5-2
+            const scoreFinal = (totalScore * (1 + pesoFuncionarios + pesoExposicao)) / (factorsCount || 1);
+
+            // Exibir resultado
+            const resultadoDiv = document.getElementById('resultado');
+            const resultadoIcone = document.getElementById('resultado-icone');
+            const resultadoTitulo = document.getElementById('resultado-titulo');
+            const resultadoDescricao = document.getElementById('resultado-descricao');
+            const resultadoBarra = document.getElementById('resultado-barra');
+            const resultadoScore = document.getElementById('resultado-score');
+            const recomendacoesList = document.getElementById('recomendacoes');
+
+            let nivelRisco, cor, icone, descricao, recomendacoes;
+
+            if (scoreFinal < 1.5) {
+                nivelRisco = "Baixo Risco";
+                cor = "bg-green-500";
+                icone = "fa-check-circle text-green-500";
+                descricao = "Seu ambiente de trabalho apresenta baixos riscos ocupacionais. Continue monitorando e mantenha os controles existentes.";
+                recomendacoes = [
+                    "Manter os controles existentes",
+                    "Realizar avaliações periódicas",
+                    "Atualizar os treinamentos anualmente"
+                ];
+            } else if (scoreFinal < 2.5) {
+                nivelRisco = "Risco Moderado";
+                cor = "bg-yellow-500";
+                icone = "fa-exclamation-triangle text-yellow-500";
+                descricao = "Foram identificados riscos que requerem atenção. Recomendamos implementar medidas corretivas.";
+                recomendacoes = [
+                    "Implementar medidas de controle específicas",
+                    "Realizar treinamentos focados nos riscos identificados",
+                    "Melhorar os EPIs disponíveis",
+                    "Considerar modificações no processo de trabalho"
+                ];
+            } else {
+                nivelRisco = "Alto Risco";
+                cor = "bg-red-500";
+                icone = "fa-times-circle text-red-500";
+                descricao = "Seu ambiente apresenta múltiplos riscos significativos. Ação imediata é necessária para garantir a segurança.";
+                recomendacoes = [
+                    "Ações corretivas imediatas",
+                    "Paralisação das atividades de alto risco até correção",
+                    "Treinamento emergencial para todos os envolvidos",
+                    "Aquisição de EPIs adequados",
+                    "Revisão completa dos processos de trabalho",
+                    "Consultoria especializada urgente"
+                ];
+            }
+
+            // Atualizar elementos do resultado
+            resultadoIcone.className = `fas ${icone} text-4xl md:text-5xl mb-2 md:mb-4`;
+            resultadoTitulo.textContent = nivelRisco;
+            resultadoDescricao.textContent = descricao;
+            resultadoBarra.className = `${cor} h-3 md:h-4 rounded-full`;
+            resultadoBarra.style.width = `${Math.min(100, scoreFinal * 33)}%`;
+            resultadoScore.textContent = `Nível de risco calculado: ${scoreFinal.toFixed(1)}/5.0`;
+
+            // Adicionar recomendações
+            recomendacoesList.innerHTML = '';
+            recomendacoes.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                recomendacoesList.appendChild(li);
+            });
+
+            // Mostrar detalhes dos fatores selecionados
+            if (selectedFactors.length > 0) {
+                const fatoresDiv = document.createElement('div');
+                fatoresDiv.className = 'bg-blue-50 rounded-lg md:rounded-xl p-3 md:p-4 mb-4 md:mb-6 text-left';
+                fatoresDiv.innerHTML = `
+            <h4 class="font-semibold text-gray-800 mb-1 md:mb-2 flex items-center text-sm md:text-base">
+                <i class="fas fa-list-ul text-blue-600 mr-1 md:mr-2"></i> Fatores de risco identificados:
+            </h4>
+            <ul class="space-y-1 text-xs md:text-sm">
+                ${selectedFactors.map(factor => `
+                    <li class="flex justify-between">
+                        <span>${factor.name}</span>
+                        <span class="font-medium ${getRiskLevelColor(factor.level)}">${getRiskLevelName(factor.level)}</span>
+                    </li>
+                `).join('')}
+            </ul>
+        `;
+                recomendacoesList.parentNode.insertBefore(fatoresDiv, recomendacoesList);
+            }
+
+            // Ir para o passo 3
+            updateSteps(3);
+
+            // Funções auxiliares
+            function getRiskLevelName(level) {
+                return ['', 'Baixo', 'Médio', 'Alto'][level];
+            }
+
+            function getRiskLevelColor(level) {
+                return ['', 'text-green-600', 'text-yellow-600', 'text-red-600'][level];
+            }
+        });
+
+        // Nova análise
+        document.getElementById('new-calculation').addEventListener('click', () => {
+            // Resetar seleções
+            document.querySelectorAll('.risk-select').forEach(select => {
+                select.value = '0';
+            });
+            document.getElementById('funcionarios').value = '10';
+            document.getElementById('funcionarios-value').textContent = '10';
+            document.getElementById('tempo-exposicao').value = '3';
+
+            // Voltar para o primeiro passo
+            updateSteps(1);
+        });
+
+        // Botão de solicitar avaliação
+        document.getElementById('solicitar-avaliacao').addEventListener('click', () => {
+            window.location.href = "#contato";
+        });
+
+        // Inicializar no primeiro passo
+        updateSteps(1);
+    </script>
+
+    <section id="video" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold text-[#0d5173] mb-6">Assista e Veja a Segurança em Ação</h2>
+            <p class="text-gray-600 text-lg mb-10 max-w-2xl mx-auto">
+                Confira um pouco do nosso trabalho e veja como a DNA da Segurança faz a diferença na prática.
+            </p>
+
+            <div class="relative" style="padding-top: 56.25%;">
+                <video class="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg" controls>
+                    <source src="./assets/video.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Depoimentos Section -->
+    <section class="py-20 bg-fixed bg-center bg-cover" style="background-image: url('./assets/img4.png');">
+        <div class="bg-[#f4f9ff]/90 py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-[#0d5173] mb-4">O que dizem nossos clientes</h2>
+                    <p class="text-lg text-[#4377c3] max-w-2xl mx-auto">Empresas que confiam na excelência da DNA da
+                        Segurança</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-[#098900] hover:shadow-xl transition-all">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">"A DNA da Segurança transformou nossa cultura de segurança. Em 1
+                            ano
+                            reduzimos nossos acidentes em 65% e melhoramos significativamente o clima organizacional."
+                        </p>
+                        <div class="flex items-center">
+                            <div
+                                class="bg-[#4377c3] text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-user-tie text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-[#0d5173]">Carlos Mendes</h4>
+                                <p class="text-sm text-gray-500">Gerente de Operações - Indústria Têxtil</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-[#4377c3] hover:shadow-xl transition-all">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">"Os treinamentos da DNA são os melhores que já tivemos. Os
+                            colaboradores realmente aprendem e aplicam no dia a dia. Excelente equipe de instrutores!"
+                        </p>
+                        <div class="flex items-center">
+                            <div
+                                class="bg-[#098900] text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-user-nurse text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-[#0d5173]">Ana Lúcia Silva</h4>
+                                <p class="text-sm text-gray-500">Enfermeira do Trabalho - Hospitalar</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-lg border-t-4 border-[#0d5173] hover:shadow-xl transition-all">
+                        <div class="flex items-center mb-4">
+                            <div class="text-yellow-400 mr-2">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 mb-6">"Contratamos a DNA para auditoria em nossas obras e ficamos
+                            impressionados com o nível de detalhe e as recomendações práticas que recebemos."</p>
+                        <div class="flex items-center">
+                            <div
+                                class="bg-[#0d5173] text-white rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                <i class="fas fa-hard-hat text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-[#0d5173]">Roberto Almeida</h4>
+                                <p class="text-sm text-gray-500">Engenheiro de Segurança - Construção Civil</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+    <section class="py-12 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Cursos em Destaque</h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Curso 1 -->
+                <div class="bg-white shadow-md rounded-2xl overflow-hidden">
+                    <img src="./assets/nr10.webp" alt="Curso 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Curso NR 10 Básico</h3>
+                        <p class="text-gray-600 mb-4">Aprenda os fundamentos da norma NR 10 com aulas práticas e
+                            teóricas.</p>
+                        <a href="https://dnasegtreinamentos.com.br/?course_title=nr%2010&course_category"
+                            target="_blank"
+                            class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Acessar
+                            Curso</a>
+                    </div>
+                </div>
+
+                <!-- Curso 2 -->
+                <div class="bg-white shadow-md rounded-2xl overflow-hidden">
+                    <img src="./assets/cipa.png" alt="Curso 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Curso de CIPA Online</h3>
+                        <p class="text-gray-600 mb-4">Forme sua CIPA com um curso online e certificado válido em todo o
+                            país.</p>
+                        <a href="https://dnasegtreinamentos.com.br/?course_title=cipa&course_category=0" target="_blank"
+                            class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Acessar
+                            Curso</a>
+                    </div>
+                </div>
+
+                <!-- Curso 3 -->
+                <div class="bg-white shadow-md rounded-2xl overflow-hidden">
+                    <img src="./assets/altura.jpg" alt="Curso 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Curso NR 35 Trabalho em Altura</h3>
+                        <p class="text-gray-600 mb-4">Treinamento essencial para profissionais que atuam em alturas
+                            acima de 2 metros.</p>
+                        <a href="https://dnasegtreinamentos.com.br/?course_title=nr%2035&course_category=0"
+                            target="_blank"
+                            class="inline-block bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Acessar
+                            Curso</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão Ver Todos os Cursos -->
+            <div class="text-center mt-10">
+                <a href="https://dnasegtreinamentos.com.br/" target="_blank"
+                    class="inline-block bg-green-600 text-white text-lg font-medium px-6 py-3 rounded-xl hover:bg-green-700 transition">
+                    Ver Todos os Cursos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="py-20 bg-gray-900 text-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+
+                <!-- Informações de Contato -->
+                <div class="space-y-8">
+                    <div>
+                        <h2 class="text-4xl font-extrabold mb-4 text-emerald-500">Entre em Contato</h2>
+                        <p class="text-gray-300 text-lg max-w-lg">
+                            Estamos prontos para ajudar sua empresa a construir uma cultura de segurança eficiente e
+                            sustentável.
+                        </p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <!-- Endereço -->
+                        <div
+                            class="flex items-start gap-4 p-4 bg-gray-800 rounded-lg hover:bg-gray-750 transition-colors">
+                            <div class="text-emerald-500 mt-1">
+                                <i class="fas fa-map-marker-alt text-2xl" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-1 text-blue-400">Endereço</h3>
+                                <address class="text-gray-300 not-italic">
+                                    Rua Odir Susin, 21, Bloco B<br>
+                                    Curitiba - PR<br>
+                                    CEP: 81270-020
+                                </address>
+                            </div>
+                        </div>
+
+                        <!-- Telefone -->
+                        <div
+                            class="flex items-start gap-4 p-4 bg-gray-800 rounded-lg hover:bg-gray-750 transition-colors">
+                            <div class="text-emerald-500 mt-1">
+                                <i class="fas fa-phone-alt text-2xl" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-1 text-blue-400">Telefone</h3>
+                                <p class="text-gray-300">
+                                    <a href="tel:+5541987424741" class="hover:text-white transition-colors">(41)
+                                        98742-4741</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- E-mail -->
+                        <div
+                            class="flex items-start gap-4 p-4 bg-gray-800 rounded-lg hover:bg-gray-750 transition-colors">
+                            <div class="text-emerald-500 mt-1">
+                                <i class="fas fa-envelope text-2xl" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-1 text-blue-400">E-mail</h3>
+                                <p class="text-gray-300">
+                                    <a href="mailto:atendimento@dnadaseguranca.com.br"
+                                        class="hover:text-white transition-colors">atendimento@dnadaseguranca.com.br</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Horário -->
+                        <div
+                            class="flex items-start gap-4 p-4 bg-gray-800 rounded-lg hover:bg-gray-750 transition-colors">
+                            <div class="text-emerald-500 mt-1">
+                                <i class="fas fa-clock text-2xl" aria-hidden="true"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-lg mb-1 text-blue-400">Horário de Atendimento</h3>
+                                <p class="text-gray-300">Segunda a Sexta: 8h às 18h</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Redes Sociais -->
+                    <div class="pt-4">
+                        <h3 class="text-xl font-semibold mb-5 text-gray-200">Conecte-se conosco</h3>
+                        <div class="flex gap-4">
+                            <a href="https://www.facebook.com/share/1Ai1VR7WeD/" target="_blank"
+                                rel="noopener noreferrer"
+                                class="bg-emerald-600 hover:bg-emerald-700 w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-300"
+                                aria-label="Facebook">
+                                <i class="fab fa-facebook-f text-white text-xl"></i>
+                            </a>
+                            <a href="https://www.instagram.com/dnadaseguranca?utm_source=qr&igsh=dzZwcWFudHFvZmVt"
+                                target="_blank" rel="noopener noreferrer"
+                                class="bg-emerald-600 hover:bg-emerald-700 w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-300"
+                                aria-label="Instagram">
+                                <i class="fab fa-instagram text-white text-xl"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/dna-da-seguran%C3%A7a/" target="_blank"
+                                rel="noopener noreferrer"
+                                class="bg-blue-600 hover:bg-blue-700 w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-300"
+                                aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in text-white text-xl"></i>
+                            </a>
+                            <a href="https://wa.me/5541987424741" target="_blank" rel="noopener noreferrer"
+                                class="bg-green-500 hover:bg-green-600 w-12 h-12 rounded-full flex items-center justify-center transition-colors duration-300"
+                                aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp text-white text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mapa Corrigido - Sem problemas de achatamento -->
+                <div class="h-96 lg:h-full rounded-xl overflow-hidden shadow-xl">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.238258995907!2d-49.32019172481403!3d-25.46320263304938!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce3d0c44f7c0b%3A0x6a86b0c66bcfbb32!2sRua%20Odir%20Susin%2C%2021%20-%20Cidade%20Industrial%2C%20Curitiba%20-%20PR%2C%2081270-020!5e0!3m2!1spt-BR!2sbr!4v1718659552248!5m2!1spt-BR!2sbr"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Localização DNA da Segurança - Rua Odir Susin, 21, Bloco B - Curitiba - PR">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adicione esses links para os ícones do Font Awesome funcionarem -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+    <!-- Footer Centralizado -->
+    <footer class="bg-gradient-to-b from-[#0d5173] to-[#098900] text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 mb-12 text-center md:text-left">
+                <!-- Sobre -->
+                <div class="flex flex-col items-center md:items-start">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="bg-white p-2 rounded-full shadow-md">
+                            <img src="./assets/logo2.png" alt="Logo DNA da Segurança" class="w-10 h-10 object-contain">
+                        </div>
+                        <h3
+                            class="text-xl font-bold bg-gradient-to-r from-white via-[#4377c3] to-white bg-clip-text text-transparent">
+                            DNA da Segurança
+                        </h3>
+                    </div>
+                    <p class="text-gray-100 mb-3">Especialistas em segurança e saúde no trabalho, transformando
+                        ambientes laborais em locais mais seguros e produtivos.</p>
+                    <p class="text-sm text-gray-300">CNPJ: 53.148.245/0001-27</p>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="text-lg font-bold mb-4 border-b border-[#4377c3] pb-2 w-full text-center md:text-left">
+                        Links Rápidos</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#inicio"
+                                class="flex items-center justify-center md:justify-start hover:text-[#98ff98] transition">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-[#4377c3]"></i> Início</a></li>
+                        <li><a href="#servicos"
+                                class="flex items-center justify-center md:justify-start hover:text-[#98ff98] transition">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-[#4377c3]"></i> Serviços</a></li>
+                        <li><a href="#estatisticas"
+                                class="flex items-center justify-center md:justify-start hover:text-[#98ff98] transition">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-[#4377c3]"></i> Estatísticas</a></li>
+                        <li><a href="#contato"
+                                class="flex items-center justify-center md:justify-start hover:text-[#98ff98] transition">
+                                <i class="fas fa-chevron-right text-xs mr-2 text-[#4377c3]"></i> Contato</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contato -->
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="text-lg font-bold mb-4 border-b border-[#4377c3] pb-2 w-full text-center md:text-left">
+                        Fale Conosco</h4>
+                    <ul class="space-y-3 text-gray-100">
+                        <li class="flex items-center justify-center md:justify-start">
+                            <i class="fas fa-envelope mr-2 text-[#4377c3]"></i> atendimento@dnadaseguranca.com.br
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start">
+                            <i class="fas fa-phone mr-2 text-[#4377c3]"></i> (41) 98742-4741
+                        </li>
+                        <li class="flex items-center justify-center md:justify-start">
+                            <i class="fas fa-map-marker-alt mr-2 text-[#4377c3]"></i> Curitiba - PR
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Redes Sociais -->
+                <div class="flex flex-col items-center md:items-start">
+                    <h4 class="text-lg font-bold mb-4 border-b border-[#4377c3] pb-2 w-full text-center md:text-left">
+                        Redes Sociais</h4>
+                    <div class="flex space-x-4 text-xl">
+                        <a href="https://www.facebook.com/share/1Ai1VR7WeD/" class="hover:text-[#98ff98] transition"
+                            aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/dnadaseguranca?utm_source=qr&igsh=dzZwcWFudHFvZmVt"
+                            class="hover:text-[#98ff98] transition" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/dna-da-seguran%C3%A7a/"
+                            class="hover:text-[#98ff98] transition" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-[#4377c3] pt-6 flex flex-col md:flex-row justify-between items-center text-sm text-gray-200">
+                <p class="mb-2 md:mb-0 text-center md:text-left">&copy; 2025 DNA da Segurança. Todos os direitos
+                    reservados.</p>
+                <a href="https://noudoc.com/" target="_blank" class="hover:text-white transition"
+                    rel="noopener noreferrer">Feito pela equipe noudoc.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão WhatsApp Flutuante com Notificação -->
+    <a href="https://wa.me/5541987424741" target="_blank" aria-label="Converse pelo WhatsApp"
+        class="fixed bottom-6 right-6 z-50 w-16 h-16 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center shadow-lg transition transform hover:scale-110">
+        <i class="fab fa-whatsapp text-2xl"></i>
+
+        <!-- Sinal Vermelho Pulsante -->
+        <span class="absolute top-0 right-0 -mt-1 -mr-1 w-4 h-4 bg-red-500 rounded-full animate-ping"></span>
+        <span class="absolute top-0 right-0 -mt-1 -mr-1 w-4 h-4 bg-red-500 rounded-full"></span>
+    </a>
+
+
+
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const backToTopButton = document.getElementById('back-to-top');
+
+            // Toggle menu mobile e animação do ícone
+            mobileMenuButton.addEventListener('click', () => {
+                const isHidden = mobileMenu.classList.toggle('hidden');
+                mobileMenuButton.setAttribute('aria-expanded', !isHidden);
+
+                const spans = mobileMenuButton.querySelectorAll('span');
+                if (isHidden) {
+                    spans[0].style.transform = 'none';
+                    spans[1].style.opacity = '1';
+                    spans[2].style.transform = 'none';
+                } else {
+                    spans[0].style.transform = 'translateY(6px) rotate(45deg)';
+                    spans[1].style.opacity = '0';
+                    spans[2].style.transform = 'translateY(-6px) rotate(-45deg)';
+                }
+            });
+
+            // Mostrar botão "Voltar ao topo" ao rolar a página
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.remove('hidden');
+                } else {
+                    backToTopButton.classList.add('hidden');
+                }
+            });
+
+            // Clique no botão "Voltar ao topo"
+            backToTopButton.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+
+            // Smooth scrolling para links âncora
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                        // Fecha menu mobile se estiver aberto
+                        if (!mobileMenu.classList.contains('hidden')) {
+                            mobileMenu.classList.add('hidden');
+
+                            // Reseta animação do botão para o estado original
+                            const spans = mobileMenuButton.querySelectorAll('span');
+                            spans[0].style.transform = 'none';
+                            spans[1].style.opacity = '1';
+                            spans[2].style.transform = 'none';
+                            mobileMenuButton.setAttribute('aria-expanded', false);
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+
+    <script>
+        // Impede scroll para âncoras no carregamento da página
+        if (window.location.hash) {
+            // Remove o # da URL sem scroll
+            history.replaceState(null, null, ' ');
+
+            // Força scroll para o topo
+            window.scrollTo(0, 0);
+        }
+
+        // Opcional: também previne comportamento padrão de links âncora
+        document.addEventListener('DOMContentLoaded', function () {
+            // Garante que inicia no topo
+            window.scrollTo(0, 0);
+
+            // Remove qualquer âncora da URL
+            if (window.location.hash) {
+                history.replaceState(null, null, ' ');
+            }
+        });
+    </script>
+</body>
+
+</html>
